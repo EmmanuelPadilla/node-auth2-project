@@ -8,7 +8,7 @@ function roleChecker(role) {
     if (req.decodedJwt.role === role) {
       next()
     } else {
-      res.status(401).json({ message: 'you have no pawa' })
+      res.status(401).json({ message: " " })
     }
   }
 }

@@ -11,7 +11,7 @@ module.exports = (req, res, next) =>{
     jwt.verify(token, jwtSecret, (err, decoded) =>{
         if(err){
             console.log('decoded error', err)
-            return res.status(401).json({ message: "tolkien bad"})
+            return res.status(401).json({ message: "ಠ_ಠ not with that token"})
         }
 
         console.log('decoded token =>', decoded)
